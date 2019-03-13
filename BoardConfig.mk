@@ -184,8 +184,8 @@ TARGET_RECOVERY_FSTAB := device/google/wahoo/recovery.fstab
 #TW_RECOVERY_ADDITIONAL_RELINK_FILES := $(OUT)/system/lib64/libhardware_legacy.so
 TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0
 TARGET_RECOVERY_DEVICE_MODULES += android.hardware.confirmationui@1.0.so
-TW_RECOVERY_ADDITIONAL_RELINK_FILES := out/target/product/$(PRODUCT_HARDWARE)/system/lib64/android.hardware.boot@1.0.so
-TW_RECOVERY_ADDITIONAL_RELINK_FILES += out/target/product/$(PRODUCT_HARDWARE)/system/lib64/vndk-28/android.hardware.confirmationui@1.0.so
+TW_RECOVERY_ADDITIONAL_RELINK_FILES := device/google/wahoo/recovery/android.hardware.boot@1.0.so
+TW_RECOVERY_ADDITIONAL_RELINK_FILES += device/google/wahoo/recovery/android.hardware.confirmationui@1.0.so
 #TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 # MTP will not work until we update it to support ffs
